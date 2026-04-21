@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flowcore | L'interopérabilité Logement Social de Demain</title>
+    <meta name="description" content="Plateforme d'interopérabilité pour le logement social. Connectez vos ERP, normalisez vos données et libérez votre innovation.">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;900&display=swap" rel="stylesheet">
+
+    <style>
+        :root { 
+            --dark: #0a192f; 
+            --gold: #e2d1b3; 
+            --accent: #112240; 
+        }
+        body { 
+            background-color: #f8fafc; 
+            font-family: 'Inter', sans-serif; 
+            overflow-x: hidden; 
+        }
+        .bg-dark { background-color: var(--dark); }
+        .text-dark { color: var(--dark); }
+        .text-gold { color: var(--gold); }
+        .btn-gold { 
+            background-color: var(--gold); 
+            color: var(--dark); 
+            transition: all 0.3s ease; 
+            border-radius: 9999px; 
+            font-weight: 700; 
+            text-transform: uppercase; 
+            font-size: 0.75rem; 
+            letter-spacing: 0.1em; 
+        }
+        .btn-gold:hover { 
+            transform: translateY(-3px); 
+            box-shadow: 0 10px 20px -5px rgba(226, 209, 179, 0.4); 
+        }
+        
+        #navLinks {
+            padding-top: 14px; 
+        }
+
+        @keyframes shimmer {
+            0% { transform: translateX(-100%); }
+            100% { transform: translateX(100%); }
+        }
+        .shimmer-effect {
+            position: relative;
+            overflow: hidden;
+        }
+        .shimmer-effect::after {
+            content: "";
+            position: absolute;
+            top: 0; left: 0; width: 100%; height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(226, 209, 179, 0.2), transparent);
+            animation: shimmer 2s infinite;
+        }
+    </style>
+</head>
+<body>
+
+    <nav id="mainNav" class="fixed w-full z-50 py-4 transition-all duration-300 border-b border-transparent bg-dark/95">
+        <div class="container mx-auto px-6 flex justify-between items-center">
+            <div id="navLogo" class="text-2xl font-black text-white italic tracking-tighter transition-colors">
+                FLOW<span class="text-gold">CORE</span>
+            </div>
+            
+            <div id="navLinks" class="hidden lg:flex flex-1 items-center justify-end text-[10px] font-bold uppercase tracking-[0.2em] transition-colors">
+                <div class="flex space-x-8 text-white/70 mr-12">
+                    <a href="#vision" class="hover:text-gold transition">Vision</a>
+                    <a href="#solution" class="hover:text-gold transition">Technologie</a>
+                    <a href="#cas-usage" class="hover:text-gold transition">Cas d'usage</a>
+                    <a href="#roadmap" class="hover:text-gold transition">Roadmap</a>
+                    <a href="#faq" class="hover:text-gold transition">FAQ</a>
+                </div>
+                <a href="#contact" class="text-gold border border-gold/30 px-5 py-2 rounded-full hover:bg-gold hover:text-dark transition text-center min-w-[120px]">Rejoindre</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="bg-dark pt-48 pb-32 px-6 relative">
+        <div class="absolute top-0 left-1/2 -translate-x-1/2 w-full h-full bg-[radial-gradient(circle_at_center,_var(--gold)_0%,_transparent_20%)] opacity-5"></div>
+        <div class="container mx-auto text-center relative z-10">
+            <h1 class="text-5xl md:text-8xl font-black text-white mb-8 leading-none" data-aos="fade-up">
+                LIBÉRER LA <span class="text-gold italic">DONNÉE.</span><br>PILOTER LE MÉTIER.
+            </h1>
+            <p class="text-slate-400 text-xl max-w-3xl mx-auto mb-12 leading-relaxed" data-aos="fade-up" data-aos-delay="100">
+                L'interopérabilité universelle pour les bailleurs sociaux. Reprenez le contrôle de vos flux ERP et accélérez votre transformation numérique.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center gap-6" data-aos="fade-up" data-aos-delay="200">
+                <a href="#solution" class="btn-gold px-12 py-5">Découvrir MODULS</a>
+                <a href="#contact" class="text-white border border-white/20 px-12 py-5 rounded-full font-bold uppercase text-xs tracking-widest hover:bg-white/5 transition">Demander une démo</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="vision" class="py-24 bg-white border-b border-slate-100">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div class="text-center" data-aos="fade-up">
+                    <div class="text-5xl font-black text-dark mb-2">-70%</div>
+                    <p class="text-[10px] font-bold text-gold uppercase tracking-widest">Coûts de maintenance</p>
+                    <p class="text-slate-500 text-sm mt-2 italic">Réduction drastique de la dette technique.</p>
+                </div>
+                <div class="text-center" data-aos="fade-up" data-aos-delay="100">
+                    <div class="text-5xl font-black text-dark mb-2">20 à 50k€</div>
+                    <p class="text-[10px] font-bold text-gold uppercase tracking-widest">Économie Intégration</p>
+                    <p class="text-slate-500 text-sm mt-2 italic">Moyenne constatée par nouveau service.</p>
+                </div>
+                <div class="text-center" data-aos="fade-up" data-aos-delay="200">
+                    <div class="text-5xl font-black text-dark mb-2 text-gold"> 3 à 6 mois</div>
+                    <p class="text-[10px] font-bold text-dark uppercase tracking-widest">Vitesse de connexion</p>
+                    <p class="text-slate-500 text-sm mt-2 italic">Contre 6 mois d'attente chez les éditeurs.</p>
+                </div>
+                <div class="text-center" data-aos="fade-up" data-aos-delay="300">
+                    <div class="text-5xl font-black text-dark mb-2">100%</div>
+                    <p class="text-[10px] font-bold text-gold uppercase tracking-widest">Souveraineté</p>
+                    <p class="text-slate-500 text-sm mt-2 italic">Indépendance totale vis-à-vis des éditeurs.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-24 bg-white px-6 border-b border-slate-50">
+        <div class="container mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-black italic uppercase tracking-tighter">Le Choix <span class="text-gold">Stratégique</span></h2>
+                <p class="text-slate-500 mt-4 italic">Rester dans l'ancien monde ou libérer votre potentiel ?</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-0 rounded-[40px] overflow-hidden shadow-2xl">
+                <div class="bg-slate-100 p-12 border-r border-slate-200">
+                    <h3 class="text-xl font-bold mb-8 text-slate-400 uppercase tracking-widest flex items-center">
+                        <i class="fas fa-times-circle mr-3"></i> Le Statu Quo
+                    </h3>
+                    <ul class="space-y-6">
+                        <li class="flex items-start">
+                            <i class="fas fa-ban text-red-400 mt-1 mr-4"></i>
+                            <div>
+                                <span class="font-bold block text-dark italic">Dépendance Éditeur</span>
+                                <p class="text-sm text-slate-500 italic">Attendre 6 mois pour chaque modification technique.</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-ban text-red-400 mt-1 mr-4"></i>
+                            <div>
+                                <span class="font-bold block text-dark italic">Saisie Manuelle</span>
+                                <p class="text-sm text-slate-500 italic">Erreurs humaines et perte de temps sur des tâches sans valeur.</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-ban text-red-400 mt-1 mr-4"></i>
+                            <div>
+                                <span class="font-bold block text-dark italic">Innovation Bloquée</span>
+                                <p class="text-sm text-slate-500 italic">Impossible d'utiliser l'IA ou les nouvelles Apps du marché.</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-ban text-red-400 mt-1 mr-4"></i>
+                            <div>
+                                <span class="font-bold block text-dark italic">Remplacement d'ERP</span>
+                                <p class="text-sm text-slate-500 italic">Budget estimé entre 2 et 5 millions d'euros.</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-ban text-red-400 mt-1 mr-4"></i>
+                            <div>
+                                <span class="font-bold block text-dark italic">Coûts de Maintenance</span>
+                                <p class="text-sm text-slate-500 italic">Budget absorbé par des "rustines" techniques.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="bg-dark p-12 relative overflow-hidden">
+                    <div class="absolute top-0 right-0 w-32 h-32 bg-gold/10 rounded-full -mr-16 -mt-16 blur-3xl"></div>
+                    <h3 class="text-xl font-bold mb-8 text-gold uppercase tracking-widest flex items-center">
+                        <i class="fas fa-check-circle mr-3"></i> L'Ère Flowcore
+                    </h3>
+                    <ul class="space-y-6">
+                        <li class="flex items-start text-white">
+                            <i class="fas fa-bolt text-gold mt-1 mr-4"></i>
+                            <div>
+                                <span class="font-bold block text-gold italic">Agilité Totale</span>
+                                <p class="text-sm text-slate-300 italic">Déploiement de nouveaux services en moins de 2 semaines.</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start text-white">
+                            <i class="fas fa-bolt text-gold mt-1 mr-4"></i>
+                            <div>
+                                <span class="font-bold block text-gold italic">Write-Back Automatisé</span>
+                                <p class="text-sm text-slate-300 italic">Mise à jour de l'ERP en temps réel sans intervention humaine.</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start text-white">
+                            <i class="fas fa-bolt text-gold mt-1 mr-4"></i>
+                            <div>
+                                <span class="font-bold block text-gold italic">IA & Data Ready</span>
+                                <p class="text-sm text-slate-300 italic">Données normalisées prêtes pour le futur technologique.</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start text-white">
+                            <i class="fas fa-bolt text-gold mt-1 mr-4"></i>
+                            <div>
+                                <span class="font-bold block text-gold italic">Maîtrise Budgétaire</span>
+                                <p class="text-sm text-slate-300 italic">Réduction drastique des coûts d'intégration ERP.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+   <section id="solution" class="py-24 bg-slate-50">
+        <div class="container mx-auto px-6">
+            <div class="text-center max-w-3xl mx-auto mb-20">
+                <h2 class="text-4xl font-black text-dark mb-6 uppercase italic tracking-tighter">L'Architecture <span class="text-gold">MODULS</span></h2>
+                <p class="text-slate-600 italic">Un connecteur unique pour l'ERP, une diffusion illimitée vers vos outils métiers.</p>
+            </div>
+
+            <div class="grid lg:grid-cols-3 gap-8 mb-20">
+                <div class="bg-white p-10 rounded-[32px] shadow-sm border border-slate-100 hover:border-gold/50 transition duration-500" data-aos="fade-up">
+                    <div class="w-12 h-12 bg-dark text-gold rounded-xl flex items-center justify-center mb-6 text-xl font-bold">01</div>
+                    <h3 class="text-xl font-bold mb-4 italic uppercase tracking-tighter text-dark">Connexion</h3>
+                    <p class="text-sm text-slate-500 leading-relaxed italic">
+                        Agent en lecture seule sur l'ERP. Zéro empreinte sur vos systèmes de production.
+                    </p>
+                </div>
+                <div class="bg-white p-10 rounded-[32px] shadow-sm border border-slate-100 hover:border-gold/50 transition duration-500" data-aos="fade-up" data-aos-delay="100">
+                    <div class="w-12 h-12 bg-dark text-gold rounded-xl flex items-center justify-center mb-6 text-xl font-bold">02</div>
+                    <h3 class="text-xl font-bold mb-4 italic uppercase tracking-tighter text-dark">Normalisation</h3>
+                    <p class="text-sm text-slate-500 leading-relaxed italic">
+                        Données traduites dans le modèle canonique MODULS (Patrimoine, Technique, Occupation).
+                    </p>
+                </div>
+                <div class="bg-white p-10 rounded-[32px] shadow-sm border border-slate-100 hover:border-gold/50 transition duration-500" data-aos="fade-up" data-aos-delay="200">
+                    <div class="w-12 h-12 bg-dark text-gold rounded-xl flex items-center justify-center mb-6 text-xl font-bold">03</div>
+                    <h3 class="text-xl font-bold mb-4 italic uppercase tracking-tighter text-dark">Distribution</h3>
+                    <p class="text-sm text-slate-500 leading-relaxed italic">
+                        Outils alimentés par simple configuration. Une donnée standardisée et réutilisable immédiatement.
+                    </p>
+                </div>
+            </div>
+
+            <div class="bg-[#0a192f] p-12 rounded-[40px] shadow-3xl border border-white/5 relative overflow-hidden" data-aos="zoom-in">
+                <div class="absolute top-0 right-0 p-8">
+                    <span class="text-[10px] font-mono text-gold/50 uppercase tracking-[0.3em]">Status: MODULS_OPEN_SOURCE</span>
+                </div>
+                <div class="flex flex-col lg:flex-row gap-12 items-center">
+                    <div class="lg:w-1/2">
+                        <div class="flex gap-2 mb-8">
+                            <div class="w-3 h-3 rounded-full bg-red-500/50"></div>
+                            <div class="w-3 h-3 rounded-full bg-yellow-500/50"></div>
+                            <div class="w-3 h-3 rounded-full bg-green-500/50"></div>
+                        </div>
+                       <div class="space-y-4 font-mono">
+                        <p class="text-blue-300 text-xs italic">[CONNECT] Connected to ERP Source...</p>
+                         <p class="text-gold text-xs italic">[TRANSFORM] Normalizing to MODULS Standard Model</p>
+                         <p class="text-green-400 text-xs italic font-bold text-center py-6 border border-white/10 rounded-xl shimmer-effect uppercase tracking-widest">
+                            Standardisation des données via MODULS
+                            </p>
+    <p class="text-blue-300 text-xs italic">[DISTRIBUTE] Routing to tools by configuration</p>
+</div>
+                    </div>
+                    <div class="lg:w-1/2">
+                        <pre class="text-[12px] font-mono text-green-300 leading-relaxed bg-black/20 p-8 rounded-2xl border border-white/5">
+                            {
+                                 "project": "FLOWCORE_MODULS",
+                                "data_model": "OPEN_SOURCE_STANDARD",
+                                "governance": "FLUX_TRACÉS_AUDITABLES",
+                                "IA_ready": "EXPLICIT_FIELDS",
+                                "write_back": "SECURE_MODE"
+                        }</pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-16 bg-white border-y border-slate-100">
+        <div class="container mx-auto px-6 text-center">
+            <h5 class="text-[10px] font-bold uppercase tracking-[0.3em] text-slate-400 mb-12 italic">Interopérabilité garantie avec vos systèmes actuels</h5>
+            <div class="flex flex-wrap justify-center items-center gap-16 opacity-30 grayscale hover:opacity-100 transition duration-700">
+                <span class="font-black text-2xl italic">SOPRA STERIA</span>
+                <span class="font-black text-2xl italic">AAREON</span>
+                <span class="font-black text-2xl italic">IMMOWARE</span>
+            </div>
+            <div class="mt-16 grid md:grid-cols-3 gap-8 max-w-4xl mx-auto border-t pt-12">
+                <div class="flex flex-col items-center">
+                    <i class="fas fa-shield-halved text-gold mb-4 text-2xl"></i>
+                    <h6 class="font-bold text-xs uppercase tracking-widest">Souveraineté Totale</h6>
+                    <p class="text-[10px] text-slate-500 mt-1 italic">Vous restez maître de vos accès données.</p>
+                </div>
+                <div class="flex flex-col items-center">
+                    <i class="fas fa-user-lock text-gold mb-4 text-2xl"></i>
+                    <h6 class="font-bold text-xs uppercase tracking-widest">Conformité RGPD</h6>
+                    <p class="text-[10px] text-slate-500 mt-1 italic">Chiffrement et anonymisation native.</p>
+                </div>
+                <div class="flex flex-col items-center">
+                    <i class="fas fa-server text-gold mb-4 text-2xl"></i>
+                    <h6 class="font-bold text-xs uppercase tracking-widest">Zéro Stockage</h6>
+                    <p class="text-[10px] text-slate-500 mt-1 italic">Flux transitifs sans persistance locale.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="cas-usage" class="py-24 bg-white px-6">
+        <div class="container mx-auto">
+            <h2 class="text-center text-3xl font-black mb-16 italic uppercase tracking-tighter">Impact <span class="text-gold">Métier</span></h2>
+            <div class="grid md:grid-cols-3 gap-8 text-center">
+                <div class="p-8 bg-slate-50 rounded-3xl" data-aos="fade-up">
+                    <i class="fas fa-user-check text-gold text-4xl mb-6"></i>
+                    <h4 class="text-xl font-bold mb-4 italic text-dark uppercase tracking-tighter">Relation Locataire</h4>
+                    <p class="text-sm text-slate-500 italic">Mise à jour des coordonnées sans saisie manuelle. Expérience fluide et sans erreur.</p>
+                </div>
+                <div class="p-8 bg-slate-50 rounded-3xl" data-aos="fade-up" data-aos-delay="100">
+                    <i class="fas fa-chart-line text-gold text-4xl mb-6"></i>
+                    <h4 class="text-xl font-bold mb-4 italic text-dark uppercase tracking-tighter">Pilotage Financier</h4>
+                    <p class="text-sm text-slate-500 italic">Vision consolidée des impayés et automatisation des plans d'apurement.</p>
+                </div>
+                <div class="p-8 bg-slate-50 rounded-3xl" data-aos="fade-up" data-aos-delay="200">
+                    <i class="fas fa-microchip text-gold text-4xl mb-6"></i>
+                    <h4 class="text-xl font-bold mb-4 italic text-dark uppercase tracking-tighter">Prédiction IA</h4>
+                    <p class="text-sm text-slate-500 italic">Connectez vos données à des algorithmes prédictifs pour la maintenance technique.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+ <section id="roadmap" class="py-24 bg-slate-50 px-6">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl font-black italic uppercase tracking-tighter mb-16">Roadmap <span class="text-gold">2026</span></h2>
+            <div class="grid grid-cols-1 md:grid-cols-5 gap-4">
+                <div class="p-8 bg-dark text-white rounded-3xl shadow-2xl scale-105 z-10 border border-gold/20" data-aos="fade-up">
+                    <div class="text-gold font-bold mb-2 uppercase text-xs tracking-widest font-black">Maintenant</div>
+                    <div class="font-bold mb-3 italic text-base underline decoration-gold underline-offset-8 uppercase tracking-tighter">Co-construction</div>
+                    <p class="text-sm text-slate-300 italic leading-relaxed">Modèle ouvert avec bailleurs et éditeurs volontaires.</p>
+                </div>
+                <div class="p-6 border border-slate-200 rounded-2xl bg-white" data-aos="fade-up" data-aos-delay="100">
+                    <div class="text-gold font-bold mb-2 uppercase text-xs">Mois 1-2</div>
+                    <div class="font-bold mb-3 italic uppercase tracking-tighter text-sm">Fondations</div>
+                    <p class="text-sm text-slate-500 italic leading-relaxed">Pipeline complet (extraction, hash, push) et API.</p>
+                </div>
+                <div class="p-6 border border-slate-200 rounded-2xl bg-white" data-aos="fade-up" data-aos-delay="200">
+                    <div class="text-gold font-bold mb-2 uppercase text-xs">Mois 3-4</div>
+                    <div class="font-bold mb-3 italic uppercase tracking-tighter text-sm">MVP</div>
+                    <p class="text-sm text-slate-500 italic leading-relaxed">1er bailleur en production et dashboards BI.</p>
+                </div>
+                <div class="p-6 border border-slate-200 rounded-2xl bg-white" data-aos="fade-up" data-aos-delay="300">
+                    <div class="text-gold font-bold mb-2 uppercase text-xs">Mois 5-7</div>
+                    <div class="font-bold mb-3 italic uppercase tracking-tighter text-sm">Croissance</div>
+                    <p class="text-sm text-slate-500 italic leading-relaxed">Déploiement 3-5 bailleurs et Write-back métier.</p>
+                </div>
+                <div class="p-6 border border-slate-200 rounded-2xl bg-white" data-aos="fade-up" data-aos-delay="400">
+                    <div class="text-gold font-bold mb-2 uppercase text-xs">Mois 8-12</div>
+                    <div class="font-bold mb-3 italic uppercase tracking-tighter text-sm">Plateforme</div>
+                    <p class="text-sm text-slate-500 italic leading-relaxed">Ouverture aux éditeurs tiers et Agents IA.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="faq" class="py-24 bg-white px-6">
+        <div class="container mx-auto max-w-4xl">
+            <h2 class="text-center text-3xl font-black mb-16 italic uppercase tracking-tighter">Questions <span class="text-gold">Stratégiques</span></h2>
+            <div class="space-y-4">
+                
+                <details class="group bg-slate-50 p-6 rounded-2xl transition duration-300">
+                    <summary class="font-bold cursor-pointer list-none flex justify-between items-center italic">
+                        Pourquoi choisir Flowcore plutôt qu'un développement interne ?
+                        <span class="group-open:rotate-180 transition duration-300"><i class="fas fa-chevron-down text-gold"></i></span>
+                    </summary>
+                    <p class="mt-4 text-sm text-slate-600 leading-relaxed italic border-l-2 border-gold pl-4">
+                        Un projet interne prend en moyenne 18 mois et coûte 3 fois plus cher en maintenance. Flowcore est une solution clé en main qui mutualise les connecteurs, garantissant un déploiement en moins de 12 semaines.
+                    </p>
+                </details>
+
+                <details class="group bg-slate-50 p-6 rounded-2xl transition duration-300">
+                    <summary class="font-bold cursor-pointer list-none flex justify-between items-center italic">
+                        L'éditeur de mon ERP peut-il bloquer l'accès de Flowcore ?
+                        <span class="group-open:rotate-180 transition duration-300"><i class="fas fa-chevron-down text-gold"></i></span>
+                    </summary>
+                    <p class="mt-4 text-sm text-slate-600 leading-relaxed italic border-l-2 border-gold pl-4">
+                        Non. Flowcore utilise des protocoles d'accès aux bases de données dont vous êtes juridiquement propriétaire. Nous agissons sous votre mandat, transformant un système fermé en une plateforme ouverte.
+                    </p>
+                </details>
+
+                <details class="group bg-slate-50 p-6 rounded-2xl transition duration-300">
+                    <summary class="font-bold cursor-pointer list-none flex justify-between items-center italic">
+                        Comment garantissez-vous la sécurité du "Write-Back" ?
+                        <span class="group-open:rotate-180 transition duration-300"><i class="fas fa-chevron-down text-gold"></i></span>
+                    </summary>
+                    <p class="mt-4 text-sm text-slate-600 leading-relaxed italic border-l-2 border-gold pl-4">
+                        Chaque écriture passe par une couche de validation (sandbox). Nous vérifions la cohérence des données par rapport à vos règles métiers avant toute modification, avec une traçabilité totale (logs).
+                    </p>
+                </details>
+
+                <details class="group bg-slate-50 p-6 rounded-2xl transition duration-300">
+                    <summary class="font-bold cursor-pointer list-none flex justify-between items-center italic">
+                        Peut-on tester la solution sur une base de données de test ?
+                        <span class="group-open:rotate-180 transition duration-300"><i class="fas fa-chevron-down text-gold"></i></span>
+                    </summary>
+                    <p class="mt-4 text-sm text-slate-600 leading-relaxed italic border-l-2 border-gold pl-4">
+                        Absolument. C'est notre protocole standard. Rien ne part en production sans une validation totale de vos services informatiques sur un environnement de simulation (Sandbox).
+                    </p>
+                </details>
+
+                <details class="group bg-slate-50 p-6 rounded-2xl transition duration-300">
+                    <summary class="font-bold cursor-pointer list-none flex justify-between items-center italic">
+                        Que se passe-t-il si je décide d'arrêter Flowcore ?
+                        <span class="group-open:rotate-180 transition duration-300"><i class="fas fa-chevron-down text-gold"></i></span>
+                    </summary>
+                    <p class="mt-4 text-sm text-slate-600 leading-relaxed italic border-l-2 border-gold pl-4">
+                        La réversibilité est totale. Puisque Flowcore ne stocke pas vos données et ne modifie pas le code source de votre ERP, il suffit de débrancher le connecteur. Vous retrouvez votre système initial instantanément.
+                    </p>
+                </details>
+
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact" class="bg-dark text-white pt-32 pb-12 px-6 relative">
+        <div class="container mx-auto text-center max-w-2xl relative z-10">
+            <h2 class="text-5xl font-black mb-8 italic leading-tight uppercase tracking-tighter">Libérez votre <span class="text-gold italic">Potentiel.</span></h2>
+            <p class="text-slate-400 mb-12 italic text-lg tracking-widest uppercase underline decoration-gold/20">Early Adopter Programme 2026</p>
+            
+            <form id="contactForm" class="space-y-4 mb-24 transition-all duration-500">
+                <input type="email" required placeholder="votre@email-pro.fr" class="w-full bg-white/5 border border-white/20 rounded-full py-5 px-10 outline-none focus:border-gold transition text-center text-white text-sm">
+                <button type="submit" class="w-full btn-gold py-5 shadow-2xl tracking-[0.3em]">Demander une étude métier</button>
+            </form>
+
+            <div id="successMessage" class="hidden mb-24 p-10 border border-gold/30 rounded-[40px] bg-white/5 animate-pulse">
+                <i class="fas fa-check-circle text-gold text-4xl mb-6"></i>
+                <h3 class="text-2xl font-bold text-gold mb-4 italic uppercase tracking-tighter">Demande transmise</h3>
+                <p class="text-slate-300 italic text-sm leading-relaxed text-center">
+                    Un expert en interopérabilité analyse votre profil. <br>
+                    Vous recevrez une invitation pour un diagnostic de 15 min sous 48h.
+                </p>
+            </div>
+
+            <div class="pt-12 border-t border-white/5 flex flex-col md:flex-row justify-between items-center text-[9px] uppercase tracking-[0.4em] text-slate-600 gap-4 italic">
+                <span>© 2026 FLOWCORE - L'ESB DU LOGEMENT SOCIAL</span>
+                <span>"La donnée appartient au bailleur, nous lui rendons simplement sa liberté."</span>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({ duration: 800, once: true });
+
+        // Gestion du formulaire de contact
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            this.classList.add('hidden');
+            document.getElementById('successMessage').classList.remove('hidden');
+        });
+
+        const nav = document.getElementById('mainNav');
+        const logo = document.getElementById('navLogo');
+        const links = document.getElementById('navLinks');
+
+        window.onscroll = function() {
+            if (window.scrollY > 80) {
+                nav.classList.replace('bg-dark/95', 'bg-white');
+                nav.classList.replace('py-4', 'py-2');
+                nav.classList.add('shadow-xl', 'border-slate-200');
+                logo.classList.replace('text-white', 'text-dark');
+                const linkText = links.querySelector('.flex');
+                if(linkText) linkText.classList.replace('text-white/70', 'text-slate-600');
+            } else {
+                nav.classList.replace('bg-white', 'bg-dark/95');
+                nav.classList.replace('py-2', 'py-4');
+                nav.classList.remove('shadow-xl', 'border-slate-200');
+                logo.classList.replace('text-dark', 'text-white');
+                const linkText = links.querySelector('.flex');
+                if(linkText) linkText.classList.replace('text-slate-600', 'text-white/70');
+            }
+        };
+    </script>
+</body>
+</html>
